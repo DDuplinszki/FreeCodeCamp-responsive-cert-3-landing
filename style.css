@@ -1,0 +1,244 @@
+/* @import url('https://fonts.googleapis.com/css?family=Poppins:200i,400,700&display=swap'); */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+
+/***** NAV / header *****/
+
+#header {
+    width: 100%;
+    height: 5rem;
+    position: sticky;
+    top: 0;
+    font-size: 1.6rem;
+    background-color: #0a0a23;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#header-img {
+    width: 4rem;
+    height: 4rem;
+}
+
+#company-brand {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    margin-left: 2rem;
+}
+
+#company-brand * {
+    cursor: pointer;
+}
+
+#nav-bar ul, #footer ul {
+    list-style: none;
+    display: flex;
+}
+
+#nav-bar ul li, #footer ul li {
+    padding: 0.25rem 1rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+#nav-bar ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+/***** top content *****/
+
+#intro-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#video {
+    aspect-ratio: 16 / 9;
+    width: 50%;
+}
+
+/***** main content *****/
+
+.gaming-setup-img {
+    display: flex;
+    justify-content: center;
+    min-height: 20rem;
+    margin: 0 auto;
+    background-image: url("https://www.reviewgeek.com/p/uploads/2020/12/19a62eff.jpg?width=1200");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fa-solid {
+    text-align: center;
+}
+
+.section-titles {
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+.p-titles {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+}
+
+#products, #how-it-works, #pricing {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+#products div, #how-it-works div, #pricing div {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+#pricing div {
+    width: 20%;
+    justify-content: space-evenly;
+    background-color: rgba(214, 234, 248, 0.75);
+    border: 1px solid rgba(240, 240, 240, 0.75);
+    border-radius: 0.5rem;
+    height: 20rem;
+    box-shadow: 0 0 5px 0px #777;
+}
+
+#pricing p {
+    text-align: center;
+}
+
+#pricing .pricing-titles {
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 0.2rem;
+    background-color: rgba(133, 193, 233, 0.75); 
+}
+
+/***** email & button *****/
+
+#form {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 20rem;
+}
+
+#form button {
+    cursor: pointer;
+    margin: 0.5rem 0rem 1rem 0rem;
+}
+
+#form button:hover {
+    background-color: rgb(52, 152, 219);
+}
+
+.interested {
+    background-color: rgba(133, 193, 233, 0.9);
+    border: none;
+    display: block;
+    box-sizing: border-box;
+    height: 2.5rem;
+    width: 100%;
+    margin: 0;
+    border-radius: 0.2rem;
+    font-family: inherit;
+    font-size: 1.25rem;
+}
+
+/***** footer *****/
+
+#footer {
+    background-color: #0a0a23;
+    color: white;
+    width: 100%;
+    height: 3rem;
+    margin: 2rem 0 0 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#footer ul {
+    margin: 0;
+}
+
+#footer-copyright {
+    flex-basis: 100%;
+    margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    #header {
+        font-size: 1rem;
+        flex-wrap: wrap;
+    }
+    #company-brand {
+        margin-top: 0.5rem;
+        flex-basis: 50%;
+    }
+    #hamburger-menu {
+        display: block;
+        margin-right: 1rem;
+    }
+    #nav-bar {
+        width: 100%;
+        display: none;
+    }
+    #header ul {
+        flex-direction: column;
+        background-color: #0a0a23;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    #header ul li {
+        padding: 0.5rem 0rem;
+    }
+    #video {
+        width: 90%;
+    }
+    #products, #how-it-works, #pricing {
+      flex-direction: column;
+      align-items: center;
+    }
+    #products div, #how-it-works div, #pricing div {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    #pricing div {
+        margin-bottom: 1rem;
+    }
+    #footer ul li {
+        padding: 0.25rem 0.3rem;
+    }
+};
